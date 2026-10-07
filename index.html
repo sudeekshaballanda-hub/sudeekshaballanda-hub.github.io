@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Social Meta Tags -->
+    <title>Sudeeksha Ballanda | CSIT Student & Aspiring Software Developer</title>
+    <meta name="description" content="Personal portfolio of Sudeeksha Ballanda, a 3rd-semester B.Tech CSIT student at REVA University, Bengaluru. Passionate about software development, DSA, IoT, AI, and building practical projects.">
+    <meta name="keywords" content="Sudeeksha Ballanda, Software Developer, CSIT, REVA University, Portfolio, React, Node.js, C++, Python, IoT, Data Science, Bengaluru">
+    <meta name="author" content="Sudeeksha Ballanda">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sudeeksha Ballanda | CSIT Student & Aspiring Software Developer">
+    <meta property="og:description" content="Building, learning, and improving through code. Explore projects in Web Dev, IoT, AI, DSA, and Cloud.">
+    <meta property="og:url" content="https://github.com/sudeekshaballanda-hub">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Sticky Navigation -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Sudeeksha Ballanda Home">
+                <span class="logo-symbol">&lt;/&gt;</span>
+                <span class="logo-text">Sudeeksha</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#profiles" class="nav-link">Profiles</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="status-dot"></span>
+                        <span>CSIT STUDENT • SOFTWARE DEVELOPMENT</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Building. Learning. <span class="gradient-text">Improving.</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I'm a CSIT student who enjoys turning ideas into practical software, exploring new technologies, and solving problems through code.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Projects</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                        </a>
+                        <a href="https://github.com/sudeekshaballanda-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-buttons">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-title">developer.c</div>
+                        </div>
+                        <div class="window-body">
+                            <pre><code class="language-c"><span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+
+<span class="code-keyword">typedef struct</span> {
+    <span class="code-type">char</span> name[<span class="code-number">30</span>];
+    <span class="code-type">char</span> status[<span class="code-number">40</span>];
+    <span class="code-type">char</span> focus[<span class="code-number">50</span>];
+} <span class="code-function">Developer</span>;
+
+<span class="code-type">int</span> <span class="code-function">main</span>() {
+    <span class="code-function">Developer</span> sudeeksha = {
+        .<span class="code-field">name</span> = <span class="code-string">"Sudeeksha Ballanda"</span>,
+        .<span class="code-field">status</span> = <span class="code-string">"3rd Sem B.Tech CSIT @ REVA"</span>,
+        .<span class="code-field">focus</span> = <span class="code-string">"DSA, Full-Stack, IoT & Cloud"</span>
+    };
+    
+    <span class="code-keyword">while</span> (<span class="code-number">1</span>) {
+        <span class="code-function">learn_concept</span>();
+        <span class="code-function">build_project</span>();
+        <span class="code-function">debug_and_improve</span>();
+    }
+    <span class="code-keyword">return</span> <span class="code-number">0</span>;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">BACKGROUND</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead-paragraph">
+                            I'm a 3rd-semester B.Tech Computer Science and Information Technology student at REVA University, Bengaluru. I enjoy building practical projects across software development, data analysis, AI, IoT and web technologies.
+                        </p>
+                        <p>
+                            My learning approach is simple: learn a concept, build something with it, break it, debug it, and improve it. Through projects, hackathons, internships, cloud programs and programming practice, I've been continuously strengthening my technical and problem-solving skills.
+                        </p>
+                        <p>
+                            I'm currently focused on becoming a strong software developer by improving my programming fundamentals, DSA, development skills and ability to solve real-world problems.
+                        </p>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                            </div>
+                            <h3>Problem Solver</h3>
+                            <p>Strengthening algorithmic logic & data structures through daily programming practice.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                            </div>
+                            <h3>Project Builder</h3>
+                            <p>Turning real-world ideas into functional software applications, web platforms, and IoT prototypes.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                            </div>
+                            <h3>Hackathon Participant</h3>
+                            <p>Collaborating under tight constraints to engineer innovative environmental & AI solutions.</p>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            </div>
+                            <h3>Continuous Learner</h3>
+                            <p>Actively taking part in cloud facilitator programs, developer workshops, and skill tracks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">CAPABILITIES</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            </div>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Solidity</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Socket.IO</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Sequelize</span>
+                        </div>
+                    </div>
+
+                    <!-- Data & AI -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                            </div>
+                            <h3>Data & AI</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Data Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & Tools -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            </div>
+                            <h3>Cloud & Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Google Cloud</span>
+                            <span class="skill-tag">Qwiklabs</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Render</span>
+                            <span class="skill-tag">Vercel</span>
+                        </div>
+                    </div>
+
+                    <!-- Blockchain -->
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                            </div>
+                            <h3>Blockchain</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Ethereum</span>
+                            <span class="skill-tag">Solidity</span>
+                            <span class="skill-tag">Web3.js</span>
+                            <span class="skill-tag">Ganache</span>
+                            <span class="skill-tag">Hardhat</span>
+                            <span class="skill-tag">Infura</span>
+                        </div>
+                    </div>
+
+                    <!-- Other Technologies -->
+                    <div class="skill-category-card skill-category-full">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+                            </div>
+                            <h3>Hardware & GIS Tools</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">Leaflet</span>
+                            <span class="skill-tag">Recharts</span>
+                            <span class="skill-tag">Material UI</span>
+                            <span class="skill-tag">Axios</span>
+                            <span class="skill-tag">QGIS</span>
+                            <span class="skill-tag">Google Earth Engine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">PORTFOLIO</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="project-filters" aria-label="Project Filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web & Systems</button>
+                    <button class="filter-btn" data-filter="iot">IoT & Blockchain</button>
+                    <button class="filter-btn" data-filter="dsa">Problem Solving / DSA</button>
+                    <button class="filter-btn" data-filter="data">Data & GIS</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: VibeSync -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">Full-Stack / Web</span>
+                                <h3 class="project-title">VibeSync</h3>
+                            </div>
+                            <p class="project-description">
+                                A real-time synchronized music playback platform designed to let multiple users listen together while keeping playback synchronized.
+                            </p>
+                            <ul class="project-features">
+                                <li>Real-time synchronization engine</li>
+                                <li>Socket.IO dual-way communication</li>
+                                <li>YouTube Data API integration</li>
+                                <li>React frontend & Node.js backend architecture</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Socket.IO</span>
+                                <span>YouTube API</span>
+                                <span>Render</span>
+                                <span>Vercel</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Aqua-Ethic -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">Hackathon / IoT & Web3</span>
+                                <h3 class="project-title">Aqua-Ethic</h3>
+                            </div>
+                            <p class="project-description">
+                                A water-quality monitoring and environmental evidence platform combining IoT sensing, satellite observation and blockchain-based data anchoring.
+                            </p>
+                            <div class="project-concept-box">
+                                <span class="concept-label">Layered Approach:</span>
+                                <ol class="concept-list">
+                                    <li>Satellite screening via Sentinel-2 / Landsat in Google Earth Engine.</li>
+                                    <li>Solar-powered IoT buoy prototypes measuring pH, turbidity, temp & DO.</li>
+                                    <li>Blockchain anchoring concept for tamper-resistant records.</li>
+                                    <li>SMS-based alerts for critical water quality events.</li>
+                                </ol>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span>IoT</span>
+                                <span>Arduino</span>
+                                <span>Sensors</span>
+                                <span>Python</span>
+                                <span>Google Earth Engine</span>
+                                <span>Sentinel-2</span>
+                                <span>Ethereum</span>
+                                <span>Solidity</span>
+                                <span>Web3.js</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: HackerRank Problem Solving -->
+                    <article class="project-card" data-category="dsa">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge badge-accent">3★ HackerRank Badge</span>
+                                <h3 class="project-title">HackerRank Problem Solving</h3>
+                            </div>
+                            <p class="project-description">
+                                A collection of programming solutions developed while strengthening algorithmic thinking and problem-solving skills in C. Earned a 3-star Problem Solving badge on HackerRank.
+                            </p>
+                            <div class="project-highlights-box">
+                                <span class="concept-label">Highlighted Problems Solved:</span>
+                                <div class="problem-tags">
+                                    <span>Diagonal Difference</span>
+                                    <span>Dynamic Array</span>
+                                    <span>Time Conversion</span>
+                                    <span>Compare the Triplets</span>
+                                    <span>Sparse Arrays</span>
+                                </div>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span>C</span>
+                                <span>Algorithms</span>
+                                <span>Data Structures</span>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/sudeekshaballanda-hub/HackerRank-3rdSem-Portfolio" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>View Repository</span>
+                                </a>
+                                <a href="https://www.hackerrank.com/profile/sudeekshaballan1" target="_blank" rel="noopener noreferrer" class="btn btn-card-alt">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    <span>HackerRank</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: LeetCode Solutions -->
+                    <article class="project-card" data-category="dsa">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">DSA / Code Repository</span>
+                                <h3 class="project-title">LeetCode Solutions</h3>
+                            </div>
+                            <p class="project-description">
+                                A growing collection of accepted LeetCode solutions written primarily in C while strengthening programming fundamentals, algorithms, and core data structures.
+                            </p>
+                            <div class="project-highlights-box">
+                                <span class="concept-label">Topics Covered:</span>
+                                <div class="problem-tags">
+                                    <span>Arrays</span>
+                                    <span>Strings</span>
+                                    <span>Searching</span>
+                                    <span>Linked Lists</span>
+                                    <span>Hashing</span>
+                                    <span>Stacks</span>
+                                </div>
+                            </div>
+                            <div class="project-tech-stack">
+                                <span>C</span>
+                                <span>Data Structures</span>
+                                <span>Algorithms</span>
+                                <span>LeetCode</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://github.com/sudeekshaballanda-hub/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn btn-card">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                    <span>View Repository</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Bangalore Lakes & Waste Management -->
+                    <article class="project-card" data-category="data">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge badge-accent">Top 22 Shortlisted Project</span>
+                                <h3 class="project-title">Bangalore Lakes & Waste Analysis</h3>
+                            </div>
+                            <p class="project-description">
+                                A geospatial problem-solving project exploring environmental and waste-management challenges in Bangalore using QGIS and spatial analysis.
+                            </p>
+                            <ul class="project-features">
+                                <li>Shortlisted among 22 teams out of 170 participating teams</li>
+                                <li>QGIS spatial analysis & data mapping</li>
+                                <li>Environmental problem solving & impact assessment</li>
+                                <li>Data-driven spatial decision making</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>QGIS</span>
+                                <span>Geospatial Analysis</span>
+                                <span>Environmental Science</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Smart Street Light / IoT -->
+                    <article class="project-card" data-category="iot">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">IoT / Hardware</span>
+                                <h3 class="project-title">Smart Street Light</h3>
+                            </div>
+                            <p class="project-description">
+                                An IoT-oriented prototype exploring automated street-light control using sensors and Arduino to optimize energy consumption.
+                            </p>
+                            <ul class="project-features">
+                                <li>Automated light intensity control based on ambient light</li>
+                                <li>Motion detection sensing for smart power saving</li>
+                                <li>Embedded micro-controller logic on Arduino</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>Arduino</span>
+                                <span>LDR Sensors</span>
+                                <span>PIR Motion Sensors</span>
+                                <span>IoT</span>
+                                <span>C++</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: IPL Data Analysis -->
+                    <article class="project-card" data-category="data">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">Data Science / Python</span>
+                                <h3 class="project-title">IPL Data Analysis</h3>
+                            </div>
+                            <p class="project-description">
+                                A Python-based data analysis project exploring Indian Premier League (IPL) historical data using statistical processing and visual charts.
+                            </p>
+                            <ul class="project-features">
+                                <li>Data cleaning & feature extraction using Pandas & NumPy</li>
+                                <li>Visual insights and trend plots using Matplotlib</li>
+                                <li>Exploratory data analysis of match & player metrics</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>Python</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Matplotlib</span>
+                                <span>Data Analysis</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Hello World Repository -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-card-inner">
+                            <div class="project-header">
+                                <span class="project-badge">Git & Version Control</span>
+                                <h3 class="project-title">Hello World Repository</h3>
+                            </div>
+                            <p class="project-description">
+                                A foundational GitHub project created while learning repository management, version control workflows, branching, and open-source practices.
+                            </p>
+                            <ul class="project-features">
+                                <li>Git basics & repository setup</li>
+                                <li>Markdown documentation & workflow setup</li>
+                                <li>Foundation for open-source collaboration</li>
+                            </ul>
+                            <div class="project-tech-stack">
+                                <span>Git</span>
+                                <span>GitHub</span>
+                                <span>Version Control</span>
+                                <span>Markdown</span>
+                            </div>
+                            <div class="project-footer">
+                                <span class="btn-disabled">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    Repository coming soon
+                                </span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Programs Section -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">JOURNEY</span>
+                    <h2 class="section-title">Experience & Programs</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Item 1: DecoderLabs -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-type">INTERNSHIP</span>
+                                    <h3 class="timeline-title">Software Development Intern</h3>
+                                    <h4 class="timeline-org">DecoderLabs</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Worked on practical software-development tasks and real-world project requirements.</li>
+                                <li>Strengthened cloud infrastructure understanding and modern development skills.</li>
+                                <li>Worked within structured development workflows and team collaboration environments.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Google Cloud Arcade -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-type">FACILITATOR PROGRAM</span>
+                                    <h3 class="timeline-title">Google Cloud Arcade / Facilitator Program</h3>
+                                    <h4 class="timeline-org">Google Cloud</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Completed hands-on cloud labs via Qwiklabs, gaining practical exposure to cloud architecture.</li>
+                                <li>Earned Google Cloud skill badges across cloud operations, storage, and networking.</li>
+                                <li>Engaged in continuous technical learning and cloud platform fundamentals.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Meta PyTorch OpenEnv -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <span class="timeline-type">HACKATHON</span>
+                                    <h3 class="timeline-title">Meta PyTorch OpenEnv Hackathon</h3>
+                                    <h4 class="timeline-org">Meta × Scaler School</h4>
+                                </div>
+                            </div>
+                            <ul class="timeline-details">
+                                <li>Participated in a hands-on AI/ML hackathon environment focused on OpenEnv and PyTorch.</li>
+                                <li>Explored machine learning concepts, environment setup, and deep learning framework workflows.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hackathons & Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">MILESTONES</span>
+                    <h2 class="section-title">Hackathons & Achievements</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">Shortlisted Top 22</span>
+                            <h3>Bangalore Lakes & Waste Management</h3>
+                            <p>Shortlisted among 22 finalist teams from 170 participating teams in a competitive geospatial environmental problem-solving challenge.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">3-Star Badge</span>
+                            <h3>HackerRank 3-Star Problem Solver</h3>
+                            <p>Earned a 3-star Problem Solving badge on HackerRank by solving algorithmic challenges in C.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">Hackathon</span>
+                            <h3>Meta PyTorch OpenEnv Hackathon</h3>
+                            <p>Participated in the AI/ML hackathon hosted by Meta × Scaler School focusing on OpenEnv environment modeling.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">Cloud Badges</span>
+                            <h3>Google Cloud Arcade Program</h3>
+                            <p>Active learner in the Google Cloud Arcade / Facilitator Program, completing hands-on GCP technical labs.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">Innovation</span>
+                            <h3>Aqua-Ethic Hackathon Prototype</h3>
+                            <p>Engineered a multi-layered IoT, Google Earth Engine satellite, and blockchain environmental monitoring prototype for hackathons.</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div class="achievement-info">
+                            <span class="achievement-tag">DSA Portfolio</span>
+                            <h3>GitHub Problem Solving Portfolios</h3>
+                            <p>Maintains public repositories documenting accepted LeetCode and HackerRank solutions in C to build strong DSA fundamentals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coding & Profiles Section -->
+        <section id="profiles" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">ONLINE PRESENCE</span>
+                    <h2 class="section-title">Coding & Profiles</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="profiles-grid">
+                    <!-- GitHub Profile -->
+                    <a href="https://github.com/sudeekshaballanda-hub" target="_blank" rel="noopener noreferrer" class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </div>
+                        <div class="profile-details">
+                            <h3>GitHub</h3>
+                            <p>sudeekshaballanda-hub</p>
+                        </div>
+                        <div class="profile-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <!-- LeetCode Repo -->
+                    <a href="https://github.com/sudeekshaballanda-hub/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div class="profile-details">
+                            <h3>LeetCode Solutions</h3>
+                            <p>leetcode-solutions repo</p>
+                        </div>
+                        <div class="profile-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <!-- HackerRank Profile -->
+                    <a href="https://www.hackerrank.com/profile/sudeekshaballan1" target="_blank" rel="noopener noreferrer" class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </div>
+                        <div class="profile-details">
+                            <h3>HackerRank</h3>
+                            <p>@sudeekshaballan1</p>
+                        </div>
+                        <div class="profile-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn Profile -->
+                    <a href="https://www.linkedin.com/in/sudeeksha-ballanda" target="_blank" rel="noopener noreferrer" class="profile-card">
+                        <div class="profile-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </div>
+                        <div class="profile-details">
+                            <h3>LinkedIn</h3>
+                            <p>in/sudeeksha-ballanda</p>
+                        </div>
+                        <div class="profile-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-content">
+                        <span class="section-subtitle">GET IN TOUCH</span>
+                        <h2 class="contact-title">Let's Connect</h2>
+                        <p class="contact-text">
+                            I'm always interested in learning, building projects, collaborating with other developers, and exploring internship opportunities.
+                        </p>
+                        <div class="contact-buttons">
+                            <a href="https://www.linkedin.com/in/sudeeksha-ballanda" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/sudeekshaballanda-hub" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/sudeekshaballan1" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <span>HackerRank</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <a href="#hero" class="footer-logo">Sudeeksha Ballanda</a>
+                <p class="footer-tagline">Building, learning and improving through code.</p>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Sudeeksha Ballanda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
